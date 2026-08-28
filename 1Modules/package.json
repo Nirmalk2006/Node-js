@@ -1,0 +1,13 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Nirmal Kharche",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "nirmal": "node math.js",
+    "start":"node app.js"
+  }
+}

@@ -1,0 +1,15 @@
+- In Node.js, a module is simply a separate file or piece of code that contains related functionality.
+
+- we can access the functionality, by using module.exports in Node.js  is used to send something from one file to another file can use it. 
+- and require() method is used to takes in the functionality of this file
+
+- Types of modules in Node.js
+  There are mainly 3 types:
+  1.Core/Built-in modules — provided by Node.js
+    -const fs = require('fs');
+    -const path = require('path');
+  2.Local modules — modules you create yourself
+    -const add = require('./math');
+  3.Third-party modules — installed using npm
+    -const express = require('express');
+    -const mangoose = require('mangoose');

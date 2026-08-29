@@ -1,0 +1,53 @@
+Node.js `fs` Module — Interview Preparation
+
+1. What is `fs` in Node.js?
+
+fs stands for File System.
+
+It is a built-in Node.js module used to work with files and directories.
+
+You can use `fs` to:
+
+- Create files
+- Read files
+- Write files
+- Update files
+- Delete files- Create directories
+- Delete directories
+- Rename files
+
+for Importing the FS system:-
+const fs = require('fs');
+
+- Sync vs Async
+
+This is one of the most important topics.
+
+-Synchronous
+
+Synchronous means:
+
+ Do the operation and wait until it finishes, means The synchronous method blocks the execution until the operation finishes.
+
+Example:
+const fs = require('fs');
+const data = fs.readFileSync('hello.txt', 'utf8');
+console.log(data);
+console.log('Done');
+means Step by Step Execution
+
+-Asynchronous means:
+
+it is a Non blocking , Start the operation and continue doing other work while Node.js handles the operation.
+
+Example:
+const fs = require('fs');
+fs.readFile('hello.txt', 'utf8', (err, data) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+
+    console.log(data);
+});
+The callback runs after the file has been read.
